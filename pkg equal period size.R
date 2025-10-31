@@ -5,12 +5,11 @@
 
 # Algorithm from paper:
 
-#  Muhammad Riaz, Mahmood ul Hassan,abid khan
-#   H. M. Kashif Rasheed and Rashid Ahmed*
+#  Jahngir et.al
 
 #
-# Coded by Riaz et al., 2021-2022 
-# Version 2.1.0  (2023-04-20)
+# Coded by Riaz et al., 2024-2025 
+# Version 2.1.0  (2024-04-20)
 #################################################################################
 Designcheck<-function(v,p,i){
   #v=9
@@ -21,132 +20,132 @@ Designcheck<-function(v,p,i){
     {
       i=(v-1)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v, "i=",i, "AND", "P=",p, "AND ALSO RUN D=1")
-    }else
+      cat("MCBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v, "i=",i, "AND", "P=",p, "AND ALSO RUN D=1","\n")
+    }
       if(v%%p==0)
       {
         i=v/p
         if(i<=0)stop("i must be a positive integer")
-        cat("MCSBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=2")
-      }else
+        cat("MCSBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=2","\n")
+      }
         
         if((v-3)%%p==0)
         {
           i=(v-3)/p
           if(i<=0)stop("i must be a positive integer")
-          cat("MCPBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=3")
-        }else
+          cat("MCPBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=3","\n")
+        }
           if((v-2)%%p==0)
           {
             i=(v-2)/p
             if(i<=0)stop("i must be a positive integer")
-            cat("MCSPBRMD-01 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=4")
-          }else          
+            cat("MCSPBRMD-01 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=4","\n")
+          }          
         if((v-4)%%p==0)
         {
          i=(v-4)/p
          if(i<=0)stop("i must be a positive integer")
-         cat("MCPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=5")
-         }else         
+         cat("MCPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=5","\n")
+         }         
            if((v-3)%%p==0)
            {
              i=(v-3)/p
              if(i<=0)stop("i must be a positive integer")
-             cat("MCSPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=6")
-           }else         
+             cat("MCSPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=6","\n")
+           }         
              if((v+1)%%p==0)
              {
                i=(v+1)/p
                if(i<=0)stop("i must be a positive integer")
-               cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=7")
-             }else          
+               cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=7","\n")
+             }          
        if((v+2)%%p==0)
       {
        i=(v+2)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCWBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=8")
-       }else   
+      cat("MCWBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=8","\n")
+       }  
          if((v+2)%%p==0)
          {
            i=(v+2)/p
            if(i<=0)stop("i must be a positive integer")
-           cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=9")
-         }else    
+           cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=9","\n")
+         }    
            if((v+3)%%p==0)
            {
              i=(v+3)/p
              if(i<=0)stop("i must be a positive integer")
-             cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=10")
-           }else          
-          cat("No Design IS POSSIBLE IN EQUAL PERIOD SIZES for", "V=",v,  "AND", "P=",p)
-  }
+             cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=10","\n")
+           }          
+          #cat("No Design IS POSSIBLE IN EQUAL PERIOD SIZES for", "V=",v,  "AND", "P=",p)
+  }else
   if(v%%2==0){
     
     if((v-2)%%p==0){
       i=(v-2)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCPBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=11")
-    }else
+      cat("MCPBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=11","\n")
+    }
       if((v-1)%%p==0){
         i=(v-1)/p
         if(i<=0)stop("i must be a positive integer")
-        cat("MCSPRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=12")
-      }else
+        cat("MCSPRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=12","\n")
+      }
         
         if((v-3)%%p==0){
           i=(v-3)/p
           if(i<=0)stop("i must be a positive integer")
-          cat("MCPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=13")
-        }else     
+          cat("MCPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=13","\n")
+        }     
           if((v-2)%%p==0){
             i=(v-2)/p
             if(i<=0)stop("i must be a positive integer")
-            cat("MCSPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=14")
-          }else      
+            cat("MCSPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=14","\n")
+          }      
             if((v-4)%%p==0){
               i=(v-4)/p
               if(i<=0)stop("i must be a positive integer")
-              cat("MCPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=15")
-            }else      
+              cat("MCPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=15","\n")
+            }      
               if((v-3)%%p==0){
                 i=(v-3)/p
                 if(i<=0)stop("i must be a positive integer")
-                cat("MCSPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=16")
-              }else  
+                cat("MCSPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=16","\n")
+              }  
         if(v%%p==0){
           i=v/p
           if(i<=0)stop("i must be a positive integer")
-          cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=17")
-        }else
+          cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=17","\n")
+        }
           
       if((v+1)%%p==0){
       i=(v+1)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=18")
-      }else
+      cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=18","\n")
+      }
         
       if((v+1)%%p==0){
       i=(v+1)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCWRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=19")
-      }else
+      cat("MCWRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=19","\n")
+      }
         
       if((v+2)%%p==0){
       i=(v+2)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=20")
-      }else        
+      cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=20","\n")
+      }        
             
       if((v+2)%%p==0){
       i=(v+2)/p
       if(i<=0)stop("i must be a positive integer")
-      cat("MCWRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=21")
-      }else        
+      cat("MCWRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=21","\n")
+      }        
         if((v+3)%%p==0){
           i=(v+3)/p
           if(i<=0)stop("i must be a positive integer")
-          cat("MCSGBRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=22")
-        }else          
+          cat("MCSGBRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=22","\n")
+        }          
             
     cat("No Design IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,  "AND", "P=",p)
     
@@ -489,10 +488,10 @@ design_CGSBRMD<-function(H){
 
 
 # example#
-(H<-Designcheck(v=22,p=4))
+(H<-Designcheck(v=21,p=3))
 
 # example#1
-(H<-CGSBRMD_equalsize(v=22,p=4,i=5,D=11))
+(H<-CGSBRMD_equalsize(v=23,p=7,i=3,D=4))
 H$G
 (D<-design_CGSBRMD(H))
 
