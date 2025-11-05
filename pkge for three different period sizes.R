@@ -18,25 +18,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v-1-p2-p3)%%p1==0)
     {
     i=(v-1-p2-p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCBRMD IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=1","\n")
     }
     if((v-1-p2-2*p3)%%p1==0)
     {
     i=(v-1-p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCBRMD IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=1","\n")
     }
     if((v-1-2*p2-p3)%%p1==0)
     {
     i=(v-1-2*p2-p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCBRMD IS POSSIBLE with two sets of p2 and one sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=1","\n")
     }
     if((v-1-2*p2-2*p3)%%p1==0)
     {
     i=(v-1-2*p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCBRMD IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=1","\n")
     }
      
@@ -44,25 +44,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v-p2-p3)%%p1==0)
     {
     i=(v-p2-p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBRMD IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=2","\n")
     }
     if((v-p2-2*p3)%%p1==0)
     {
     i=(v-p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBRMD IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=2","\n")
     }
     if((v-2*p2-p3)%%p1==0)
     {
     i=(v-2*p2-p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBRMD IS POSSIBLE with two sets of p2 and one set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=2","\n")
     }
     if((v-2*p2-2*p3)%%p1==0)
     {
     i=(v-2*p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBRMD IS POSSIBLE with two sets of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=2","\n")
     }
       
@@ -70,50 +70,50 @@ Designcheck<-function(v,p1,p2,p3,i){
       if((v-3-p2-p3)%%p1==0)
       {
         i=(v-3-p2-p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCPBRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=3","\n")
       }
         if((v-3-p2-2*p3)%%p1==0)
         {
           i=(v-3-p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCPBRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=3","\n")
         }
           if((v-3-2*p2-p3)%%p1==0)
           {
             i=(v-3-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCPBRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=3","\n")
           }
             if((v-3-2*p2-2*p3)%%p1==0)
             {
              i=(v-3-2*p2-2*p3)/p1
-              if(i<=0)stop("No design is possible because i not a positive integer")
+              if(i>=1)
               cat("MCPBRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=3","\n")
             }  
       
   if((v-2-p2-p3)%%p1==0)
   {
   i=(v-2-p2-p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=4","\n")
   }
   if((v-2-p2-2*p3)%%p1==0)
   {
   i=(v-2-p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=4","\n")
   }
   if((v-2-2*p2-p3)%%p1==0)
   {
   i=(v-2-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=4","\n")
   }
   if((v-2-2*p2-2*p3)%%p1==0)
   {
   i=(v-2-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=4","\n")
   }                    
       
@@ -121,25 +121,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v-4-p2-p3)%%p1==0)
     {
       i=(v-4-p2-p3)/p1
-      if(i<=0)stop("No design is possible because i not a positive integer")
+      if(i>=1)
       cat("MCPBRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=5","\n")
     }
       if((v-4-p2-2*p3)%%p1==0)
       {
         i=(v-4-p2-2*p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCPBRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=5","\n")
       }
         if((v-4-2*p2-p3)%%p1==0)
         {
           i=(v-4-2*p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCPBRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=5","\n")
         }
           if((v-4-2*p2-2*p3)%%p1==0)
           {
             i=(v-4-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCPBRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=5","\n")
           }   
   
@@ -147,25 +147,25 @@ Designcheck<-function(v,p1,p2,p3,i){
    if((v-3-p2-p3)%%p1==0)
    {
    i=(v-3-p2-p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCSPBRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=6","\n")
    }
    if((v-3-p2-2*p3)%%p1==0)
    {
    i=(v-3-p2-2*p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCSPBRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=6","\n")
    }
    if((v-3-2*p2-p3)%%p1==0)
    {
    i=(v-3-2*p2-2*p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCSPBRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=6","\n")
    }
    if((v-3-2*p2-2*p3)%%p1==0)
    {
    i=(v-3-2*p2-2*p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCSPBRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=6","\n")
    }            
      
@@ -173,25 +173,25 @@ Designcheck<-function(v,p1,p2,p3,i){
      if((v+1-p2-p3)%%p1==0)
      {
        i=(v+1-p2-p3)/p1
-       if(i<=0)stop("No design is possible because i not a positive integer")
+       if(i>=1)
        cat("MCWBRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=7","\n")
      }
        if((v+1-p2-2*p3)%%p1==0)
        {
          i=(v+1-p2-2*p3)/p1
-         if(i<=0)stop("No design is possible because i not a positive integer")
+         if(i>=1)
          cat("MCWBRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=7","\n")
        }
          if((v+1-2*p2-p3)%%p1==0)
          {
            i=(v+1-2*p2-2*p3)/p1
-           if(i<=0)stop("No design is possible because i not a positive integer")
+           if(i>=1)
            cat("MCWBRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=7","\n")
          }
            if((v+1-2*p2-2*p3)%%p1==0)
            {
              i=(v+1-2*p2-2*p3)/p1
-             if(i<=0)stop("No design is possible because i not a positive integer")
+             if(i>=1)
              cat("MCWBRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=7","\n")
            }   
              
@@ -199,25 +199,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v+2-p2-p3)%%p1==0)
     {
     i=(v+2-p2-p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBGRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=8","\n")
     }
     if((v+2-p2-2*p3)%%p1==0)
     {
     i=(v+2-p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBGRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=8","\n")
     }
     if((v+2-2*p2-p3)%%p1==0)
     {
     i=(v+2-2*p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBGRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=8","\n")
     }
     if((v+2-2*p2-2*p3)%%p1==0)
     {
     i=(v+2-2*p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCSBGRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=8","\n")
     }             
 
@@ -225,25 +225,25 @@ Designcheck<-function(v,p1,p2,p3,i){
       if((v+2-p2-p3)%%p1==0)
       {
         i=(v+2-p2-p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCWBRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=9","\n")
       }
         if((v+2-p2-2*p3)%%p1==0)
         {
           i=(v+2-p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCWBRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=9","\n")
         }
           if((v+2-2*p2-p3)%%p1==0)
           {
             i=(v+2-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCWBRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=9","\n")
           }
             if((v+2-2*p2-2*p3)%%p1==0)
             {
               i=(v+2-2*p2-2*p3)/p1
-              if(i<=0)stop("No design is possible because i not a positive integer")
+              if(i>=1)
               cat("MCWBRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=9","\n")
             }            
             
@@ -251,25 +251,25 @@ Designcheck<-function(v,p1,p2,p3,i){
   if((v+3-p2-p3)%%p1==0)
   {
   i=(v+3-p2-p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCBGRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=10","\n")
   }
   if((v+3-p2-2*p3)%%p1==0)
   {
   i=(v+3-p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
    cat("MCBGRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=10","\n")
    }
    if((v+3-2*p2-p3)%%p1==0)
    {
    i=(v+3-2*p2-p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCBGRMD-O2 IS POSSIBLE with two sets of p2 and one sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=10","\n")
    }
    if((v+3-2*p2-2*p3)%%p1==0)
    {
    i=(v+3-2*p2-2*p3)/p1
-   if(i<=0)stop("No design is possible because i not a positive integer")
+   if(i>=1)
    cat("MCBGRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=10","\n")
    }              
             
@@ -282,25 +282,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v-2-p2-p3)%%p1==0)
     {
       i=(v-2-p2-p3)/p1
-      if(i<=0)stop("No design is possible because i not a positive integer")
+      if(i>=1)
       cat("MCPRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=11","\n")
     }
       if((v-2-p2-2*p3)%%p1==0)
       {
         i=(v-2-p2-2*p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCPRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=11","\n")
       }
         if((v-2-2*p2-p3)%%p1==0)
         {
           i=(v-2-2*p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCPRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=11","\n")
         }
           if((v-2-2*p2-2*p3)%%p1==0)
           {
             i=(v-2-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCPRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=11","\n")
           }
             
@@ -308,25 +308,25 @@ Designcheck<-function(v,p1,p2,p3,i){
             if((v-1-p2-p3)%%p1==0)
             {
               i=(v-1-p2-p3)/p1
-              if(i<=0)stop("No design is possible because i not a positive integer")
+              if(i>=1)
               cat("MCSPRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=12","\n")
             }
               if((v-1-p2-2*p3)%%p1==0)
               {
                 i=(v-1-p2-2*p3)/p1
-                if(i<=0)stop("No design is possible because i not a positive integer")
+                if(i>=1)
                 cat("MCSPRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=12","\n")
               }
                 if((v-1-2*p2-p3)%%p1==0)
                 {
                   i=(v-1-2*p2-p3)/p1
-                  if(i<=0)stop("No design is possible because i not a positive integer")
+                  if(i>=1)
                   cat("MCSPRMD-O1 IS POSSIBLE with two sets of p2 and one sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=12","\n")
                 }
                   if((v-1-2*p2-2*p3)%%p1==0)
                   {
                     i=(v-1-2*p2-2*p3)/p1
-                    if(i<=0)stop("No design is possible because i not a positive integer")
+                    if(i>=1)
                     cat("MCSPRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=12","\n")
                   }
   
@@ -334,100 +334,100 @@ Designcheck<-function(v,p1,p2,p3,i){
   if((v-3-p2-p3)%%p1==0)
   {
   i=(v-3-p2-p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCPRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=13","\n")
   }
   if((v-3-p2-2*p3)%%p1==0)
   {
   i=(v-3-p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCPRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=13","\n")
   }
   if((v-3-2*p2-p3)%%p1==0)
   {
   i=(v-3-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCPRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=13","\n")
   }
   if((v-3-2*p2-2*p3)%%p1==0)
   {
   i=(v-3-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCPRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=13","\n")
   }
                   
     if((v-2-p2-p3)%%p1==0)
     {
       i=(v-2-p2-p3)/p1
-      if(i<=0)stop("No design is possible because i not a positive integer")
+      if(i>=1)
       cat("MCSPRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=14","\n")
     }
       if((v-2-p2-2*p3)%%p1==0)
       {
         i=(v-2-p2-2*p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCSPRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=14","\n")
       }
         if((v-2-2*p2-p3)%%p1==0)
         {
           i=(v-2-2*p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCSPRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=14","\n")
         }
           if((v-2-2*p2-2*p3)%%p1==0)
           {
             i=(v-2-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCSPRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=14","\n")
           }
                     
             if((v-4-p2-p3)%%p1==0)
             {
               i=(v-4-p2-p3)/p1
-              if(i<=0)stop("No design is possible because i not a positive integer")
+              if(i>=1)
               cat("MCPRMD-EII IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=15","\n")
             }
               if((v-4-p2-2*p3)%%p1==0)
               {
                 i=(v-4-p2-2*p3)/p1
-                if(i<=0)stop("No design is possible because i not a positive integer")
+                if(i>=1)
                 cat("MCPRMD-EII IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=15","\n")
               }
                 if((v-4-2*p2-p3)%%p1==0)
                 {
                   i=(v-4-2*p2-2*p3)/p1
-                  if(i<=0)stop("No design is possible because i not a positive integer")
+                  if(i>=1)
                   cat("MCPRMD-EII IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=15","\n")
                 }
                   if((v-4-2*p2-2*p3)%%p1==0)
                   {
                     i=(v-4-2*p2-2*p3)/p1
-                    if(i<=0)stop("No design is possible because i not a positive integer")
+                    if(i>=1)
                     cat("MCPRMD-EII IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=15","\n")
 }
                         
   if((v-3-p2-p3)%%p1==0)
   {
   i=(v-3-p2-p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-EII IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=16","\n")
   }
   if((v-3-p2-2*p3)%%p1==0)
   {
   i=(v-3-p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-EII IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=16","\n")
   }
   if((v-3-2*p2-p3)%%p1==0)
   {
   i=(v-3-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-EII IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=16","\n")
   }
   if((v-3-2*p2-2*p3)%%p1==0)
   {
   i=(v-3-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCSPBRMD-EII IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=16","\n")
  }
    
@@ -435,25 +435,25 @@ Designcheck<-function(v,p1,p2,p3,i){
    if((v-p2-p3)%%p1==0)
    {
      i=(v-p2-p3)/p1
-     if(i<=0)stop("No design is possible because i not a positive integer")
+     if(i>=1)
      cat("MCWBRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=17","\n")
    }
      if((v-p2-2*p3)%%p1==0)
      {
      i=(v-p2-2*p3)/p1
-    if(i<=0)stop("No design is possible because i not a positive integer")
+    if(i>=1)
     cat("MCWBRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=17","\n")
     }
        if((v-2*p2-p3)%%p1==0)
        {
          i=(v-2*p2-2*p3)/p1
-         if(i<=0)stop("No design is possible because i not a positive integer")
+         if(i>=1)
          cat("MCWBRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=17","\n")
        }
          if((v-2*p2-2*p3)%%p1==0)
          {
            i=(v-2*p2-2*p3)/p1
-           if(i<=0)stop("No design is possible because i not a positive integer")
+           if(i>=1)
            cat("MCWBRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=17","\n")
          }
  
@@ -461,25 +461,25 @@ Designcheck<-function(v,p1,p2,p3,i){
            if((v+1-p2-p3)%%p1==0)
            {
              i=(v+1-p2-p3)/p1
-             if(i<=0)stop("No design is possible because i not a positive integer")
+             if(i>=1)
              cat("MCBGRMD-O1 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=18","\n")
            }
              if((v+1-p2-2*p3)%%p1==0)
              {
                i=(v+1-p2-2*p3)/p1
-               if(i<=0)stop("No design is possible because i not a positive integer")
+               if(i>=1)
                cat("MCBGRMD-O1 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=18","\n")
              }
                if((v-2*p2-p3)%%p1==0)
                {
                  i=(v+1-2*p2-2*p3)/p1
-                 if(i<=0)stop("No design is possible because i not a positive integer")
+                 if(i>=1)
                  cat("MCBGRMD-O1 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=18","\n")
                }
                  if((v+1-2*p2-2*p3)%%p1==0)
                  {
                    i=(v+1-2*p2-2*p3)/p1
-                   if(i<=0)stop("No design is possible because i not a positive integer")
+                   if(i>=1)
                    cat("MCBGRMD-O1 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=18","\n")
                  }
                    
@@ -487,25 +487,25 @@ Designcheck<-function(v,p1,p2,p3,i){
   if((v+1-p2-p3)%%p1==0)
   {
   i=(v+1-p2-p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
    cat("MCWBRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=19","\n")
   }
   if((v+1-p2-2*p3)%%p1==0)
   {
   i=(v+1-p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCWBRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=19","\n")
   }
   if((v+1-2*p2-p3)%%p1==0)
   {
   i=(v+1-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCWBRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=19","\n")
   }
   if((v+1-2*p2-2*p3)%%p1==0)
   {
   i=(v+1-2*p2-2*p3)/p1
-  if(i<=0)stop("No design is possible because i not a positive integer")
+  if(i>=1)
   cat("MCWBRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=19","\n")
   }
     
@@ -513,25 +513,25 @@ Designcheck<-function(v,p1,p2,p3,i){
     if((v+2-p2-p3)%%p1==0)
     {
       i=(v+2-p2-p3)/p1
-      if(i<=0)stop("No design is possible because i not a positive integer")
+      if(i>=1)
       cat("MCSBGRMD-O2 IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=20","\n")
     }
       if((v+2-p2-2*p3)%%p1==0)
       {
         i=(v+2-p2-2*p3)/p1
-        if(i<=0)stop("No design is possible because i not a positive integer")
+        if(i>=1)
         cat("MCSBGRMD-O2 IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=20","\n")
       }
         if((v+2-2*p2-p3)%%p1==0)
         {
           i=(v+2-2*p2-2*p3)/p1
-          if(i<=0)stop("No design is possible because i not a positive integer")
+          if(i>=1)
           cat("MCSBGRMD-O2 IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=20","\n")
         }
           if((v+2-2*p2-2*p3)%%p1==0)
           {
             i=(v+2-2*p2-2*p3)/p1
-            if(i<=0)stop("No design is possible because i not a positive integer")
+            if(i>=1)
             cat("MCSBGRMD-O2 IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=20","\n")
           }
             
@@ -540,25 +540,25 @@ Designcheck<-function(v,p1,p2,p3,i){
             if((v+2-p2-p3)%%p1==0)
             {
               i=(v+2-p2-p3)/p1
-              if(i<=0)stop("No design is possible because i not a positive integer")
+              if(i>=1)
               cat("MCWBRMD-EII IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=21","\n")
             }
               if((v+2-p2-2*p3)%%p1==0)
               {
                 i=(v+2-p2-2*p3)/p1
-                if(i<=0)stop("No design is possible because i not a positive integer")
+                if(i>=1)
                 cat("MCWBRMD-EII IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=21","\n")
               }
                 if((v+2-2*p2-p3)%%p1==0)
                 {
                   i=(v+2-2*p2-2*p3)/p1
-                  if(i<=0)stop("No design is possible because i not a positive integer")
+                  if(i>=1)
                   cat("MCWBRMD-EII IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=21","\n")
                 }
                   if((v+2-2*p2-2*p3)%%p1==0)
                   {
                     i=(v+2-2*p2-2*p3)/p1
-                    if(i<=0)stop("No design is possible because i not a positive integer")
+                    if(i>=1)
                     cat("MCWBRMD-EII IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=21","\n")
                   }
                          
@@ -567,25 +567,25 @@ Designcheck<-function(v,p1,p2,p3,i){
                     if((v+3-p2-p3)%%p1==0)
                     {
                       i=(v+3-p2-p3)/p1
-                      if(i<=0)stop("No design is possible because i not a positive integer")
+                      if(i>=1)
                       cat("MCSBGRMD-EII IS POSSIBLE with one set of p2 and p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=22","\n")
                     }
                       if((v+3-p2-2*p3)%%p1==0)
                       {
                         i=(v+3-p2-2*p3)/p1
-                        if(i<=0)stop("No design is possible because i not a positive integer")
+                        if(i>=1)
                         cat("MCSBGRMD-EII IS POSSIBLE with one set of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=22","\n")
                       }
                         if((v+3-2*p2-p3)%%p1==0)
                         {
                           i=(v+3-2*p2-2*p3)/p1
-                          if(i<=0)stop("No design is possible because i not a positive integer")
+                          if(i>=1)
                           cat("MCSBGRMD-EII IS POSSIBLE with two sets of p2 and two sets of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=22")
                         }
                           if((v+3-2*p2-2*p3)%%p1==0)
                           {
                             i=(v+3-2*p2-2*p3)/p1
-                            if(i<=0)stop("No design is possible because i not a positive integer")
+                            if(i>=1)
                             cat("MCSBGRMD-EII IS POSSIBLE with two sets of p2 and two set of p3", "V=",v, "P1=",p1, "P2=",p2, "P3=",p3, "AND", "i=",i, "AND ALSO RUN D=22","\n")
                           }
                                                     
@@ -923,7 +923,7 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==18){ 
         v=p[1]*i+p[2]+p[3]-1
-        A<-c(0,1:(v-1))
+        A<-c(0,1:(v-1),(v-2/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1097,7 +1097,7 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==18){ 
         v=p[1]*i+2*p[2]+p[3]-1
-        A<-c(0,1:(v-1))
+        A<-c(0,1:(v-1),(v-2/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1270,7 +1270,7 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==18){ 
         v=p[1]*i+p[2]+2*p[3]-1
-        A<-c(0,1:(v-1))
+        A<-c(0,1:(v-1),(v-2/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1444,7 +1444,7 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==18){ 
         v=p[1]*i+2*p[2]+2*p[3]-1
-        A<-c(0,1:(v-1))
+        A<-c(0,1:(v-1),(v-2/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1553,13 +1553,13 @@ design_CGSBRMD<-function(H){
 
 
 #example
-(H<-Designcheck(v=33,p1=6,p2=5,p3=4))
+(H<-Designcheck(v=27,p1=7,p2=6,p3=5))
 
 
 # Examples for Case#1
 p=c(13,9,7);i=5;D=1;sp2=1;sp3=1
 (H<-CGSBRMD_3diffsize(p,i=5,D=1,sp2,sp3))
-(H<-CGSBRMD_3diffsize(p=c(6,5,4),v=33,i=3,D=10,sp2=2,sp3=2))
+(H<-CGSBRMD_3diffsize(p=c(7,6,5),v=27,i=2,D=10,sp2=1,sp3=2))
 (H<-CGSBRMD_3diffsize(p=c(8,9,10),v=40,i=7,D=5,sp2=2,sp3=2))
 H$G
 (H<-CGSBRMD_3diffsize(p=c(8,5,3),v=3,i=5,D=1,sp2=1,sp3=1))
