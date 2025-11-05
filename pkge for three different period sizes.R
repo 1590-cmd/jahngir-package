@@ -916,14 +916,14 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==17){ 
         v=p[1]*i+p[2]+p[3]
-        A<-c(1,2:(v-1))
+        A<-c(1,2:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
       }
       if(D==18){ 
         v=p[1]*i+p[2]+p[3]-1
-        A<-c(0,1:(v-1),(v-2/2))
+        A<-c(0,1:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1090,14 +1090,14 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==17){ 
         v=p[1]*i+2*p[2]+p[3]
-        A<-c(1,2:(v-1))
+        A<-c(1,2:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
       }
       if(D==18){ 
         v=p[1]*i+2*p[2]+p[3]-1
-        A<-c(0,1:(v-1),(v-2/2))
+        A<-c(0,1:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1263,14 +1263,14 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==17){ 
         v=p[1]*i+p[2]+2*p[3]
-        A<-c(1,2:(v-1))
+        A<-c(1,2:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
       }
       if(D==18){ 
         v=p[1]*i+p[2]+2*p[3]-1
-        A<-c(0,1:(v-1),(v-2/2))
+        A<-c(0,1:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
@@ -1437,14 +1437,14 @@ minimal class for", "v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[
       }
       if(D==17){ 
         v=p[1]*i+2*p[2]+2*p[3]
-        A<-c(1,2:(v-1))
+        A<-c(1,2:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
       }
       if(D==18){ 
         v=p[1]*i+2*p[2]+2*p[3]-1
-        A<-c(0,1:(v-1),(v-2/2))
+        A<-c(0,1:(v-1),(v/2))
         A1<-grouping3(A,p,v,i,sp2,sp3)
         A2<-c(v,p);names(A2)<-c("V","p1","p2","p3")
         x<-list(S=A1$B1,G=A1$B4,R=A2,A=A)
