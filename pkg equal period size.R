@@ -8,7 +8,7 @@
 #  Jahngir et.al
 
 #
-# Coded by Riaz et al., 2024-2025 
+# Coded by jahngir et al., 2024-2025 
 # Version 2.1.0  (2024-04-20)
 #################################################################################
 Designcheck<-function(v,p,i){
@@ -19,13 +19,13 @@ Designcheck<-function(v,p,i){
     if((v-1)%%p==0)
     {
       i=(v-1)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v, "i=",i, "AND", "P=",p, "AND ALSO RUN D=1","\n")
     }
       if(v%%p==0)
       {
         i=v/p
-        if(i<=0)stop("i must be a positive integer")
+        if(i>=1)
         cat("MCSBRMD IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=2","\n")
       }
         
@@ -38,43 +38,43 @@ Designcheck<-function(v,p,i){
           if((v-2)%%p==0)
           {
             i=(v-2)/p
-            if(i<=0)stop("i must be a positive integer")
+            if(i>=1)
             cat("MCSPBRMD-01 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=4","\n")
           }          
         if((v-4)%%p==0)
         {
          i=(v-4)/p
-         if(i<=0)stop("i must be a positive integer")
+         if(i>=1)
          cat("MCPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=5","\n")
          }         
            if((v-3)%%p==0)
            {
              i=(v-3)/p
-             if(i<=0)stop("i must be a positive integer")
+             if(i>=1)
              cat("MCSPBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=6","\n")
            }         
              if((v+1)%%p==0)
              {
                i=(v+1)/p
-               if(i<=0)stop("i must be a positive integer")
+               if(i>=1)
                cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=7","\n")
              }          
        if((v+2)%%p==0)
       {
        i=(v+2)/p
-      if(i<=0)stop("i must be a positive integer")
+       if(i>=1)
       cat("MCWBRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=8","\n")
        }  
          if((v+2)%%p==0)
          {
            i=(v+2)/p
-           if(i<=0)stop("i must be a positive integer")
+           if(i>=1)
            cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=9","\n")
          }    
            if((v+3)%%p==0)
            {
              i=(v+3)/p
-             if(i<=0)stop("i must be a positive integer")
+             if(i>=1)
              cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=10","\n")
            }          
           #cat("No Design IS POSSIBLE IN EQUAL PERIOD SIZES for", "V=",v,  "AND", "P=",p)
@@ -83,67 +83,67 @@ Designcheck<-function(v,p,i){
     
     if((v-2)%%p==0){
       i=(v-2)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCPBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=11","\n")
     }
       if((v-1)%%p==0){
         i=(v-1)/p
-        if(i<=0)stop("i must be a positive integer")
+        if(i>=1)
         cat("MCSPRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=12","\n")
       }
         
         if((v-3)%%p==0){
           i=(v-3)/p
-          if(i<=0)stop("i must be a positive integer")
+          if(i>=1)
           cat("MCPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=13","\n")
         }     
           if((v-2)%%p==0){
             i=(v-2)/p
-            if(i<=0)stop("i must be a positive integer")
+            if(i>=1)
             cat("MCSPRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=14","\n")
           }      
             if((v-4)%%p==0){
               i=(v-4)/p
-              if(i<=0)stop("i must be a positive integer")
+              if(i>=1)
               cat("MCPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=15","\n")
             }      
               if((v-3)%%p==0){
                 i=(v-3)/p
-                if(i<=0)stop("i must be a positive integer")
+                if(i>=1)
                 cat("MCSPRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=16","\n")
               }  
         if(v%%p==0){
           i=v/p
-          if(i<=0)stop("i must be a positive integer")
+          if(i>=1)
           cat("MCWBRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=17","\n")
         }
           
       if((v+1)%%p==0){
       i=(v+1)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCSBGRMD-O1 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=18","\n")
       }
         
       if((v+1)%%p==0){
       i=(v+1)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCWRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=19","\n")
       }
         
       if((v+2)%%p==0){
       i=(v+2)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCSBGRMD-O2 IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=20","\n")
       }        
             
       if((v+2)%%p==0){
       i=(v+2)/p
-      if(i<=0)stop("i must be a positive integer")
+      if(i>=1)
       cat("MCWRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=21","\n")
       }        
         if((v+3)%%p==0){
           i=(v+3)/p
-          if(i<=0)stop("i must be a positive integer")
+          if(i>=1)
           cat("MCSGBRMD-EII IS POSSIBLE IN EQUAL PERIOD SIZES FOR GIVEN", "V=",v,"i=",i,  "AND", "P=",p, "AND ALSO RUN D=22","\n")
         }          
             
